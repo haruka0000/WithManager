@@ -35,7 +35,7 @@ public class VideoActivity extends Activity {
     private Context context;
     private int movie_time = 5000;
 
-//    private String sava_path  = "/storage/emulated/0/WithManager/";
+//    private String sava_path  = "/storage/emulated/legacy/WithManager/";
     private String sava_path  = "sdcard/WithManager/";
 
     private VideoRecorder mRecorder;
@@ -65,11 +65,8 @@ public class VideoActivity extends Activity {
         mOverLayHolder.addCallback(mPreviewCallback);
         mOverLaySurfaceView.setVisibility(SurfaceView.INVISIBLE);
 
-
         ListView lv_players1;
         ListView lv_players2;
-
-
 
         try {
             File dir_save = new File(sava_path);
